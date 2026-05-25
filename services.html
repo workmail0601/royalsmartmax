@@ -200,6 +200,36 @@
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
   }
+
+  /* --- Mobile menu Get a Quote button fix --- */
+  .mobile-menu a.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: var(--green);
+    color: var(--white);
+    padding: 0.85rem 1.5rem;
+    border: none;
+    border-bottom: none;
+    border-radius: 50px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-top: 0.75rem;
+    box-shadow: 0 8px 22px var(--green-glow);
+    transition: all var(--transition);
+  }
+  .mobile-menu a.btn-primary:hover {
+    background: var(--green-dark);
+    color: var(--white);
+    transform: translateY(-2px);
+  }
+
+  /* --- Footer horizontal padding on small screens --- */
+  @media (max-width: 767px) {
+    footer .container { padding-left: 2rem; padding-right: 2rem; }
+  }
 </style>
 </head>
 <body>
