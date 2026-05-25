@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services | Royal Smart Max Ltd - ICT Solutions Kenya</title>
+  <meta name="description" content="Explore Royal Smart Max Ltd's full range of technology services: ICT consultancy, software development, website design, networking, digital marketing and ICT equipment supply in Kenya." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.royalsmartmax.co.ke/services.html" />
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon_io/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --green:        #4fb52e;
+    --green-dark:   #3d9620;
+    --green-glow:   rgba(79,181,46,0.22);
+    --green-dim:    rgba(79,181,46,0.08);
+    --green-mid:    rgba(79,181,46,0.16);
+    --navy:         #091628;
+    --navy-mid:     #1a2b45;
+    --navy-soft:    #3a4a63;
+    --bg:           #ffffff;
+    --bg-alt:       #f5f7fb;
+    --bg-tint:      #eef2f8;
+    --text:         #0d1b30;
+    --text-mid:     #4a5b6e;
+    --text-muted:   #8595a8;
+    --border:       #e6ebf2;
+    --border-strong:#d2dae6;
+    --white:        #ffffff;
+    --radius:       18px;
+    --radius-sm:    10px;
+    --radius-xs:    6px;
+    --transition:   0.3s cubic-bezier(0.4,0,0.2,1);
+    --shadow-sm:    0 1px 2px rgba(13,27,48,0.04), 0 1px 3px rgba(13,27,48,0.06);
+    --shadow-md:    0 4px 6px rgba(13,27,48,0.04), 0 10px 24px rgba(13,27,48,0.08);
+    --shadow-lg:    0 20px 50px rgba(13,27,48,0.10), 0 8px 16px rgba(13,27,48,0.06);
+    --shadow-glow:  0 14px 34px rgba(79,181,46,0.30);
+  }
+
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+
+  /* Animated gradient orbs (decorative bg) */
+  .bg-orbs { position: fixed; inset: 0; z-index: -1; pointer-events: none; overflow: hidden; }
+  .bg-orbs::before, .bg-orbs::after {
+    content:''; position:absolute; width:600px; height:600px; border-radius:50%;
+    filter: blur(120px); opacity: 0.35;
+  }
+  .bg-orbs::before { background: radial-gradient(circle, rgba(79,181,46,0.30), transparent 70%); top:-200px; right:-200px; animation: float1 18s ease-in-out infinite; }
+  .bg-orbs::after  { background: radial-gradient(circle, rgba(9,22,40,0.10), transparent 70%);  bottom:-300px; left:-200px; animation: float2 22s ease-in-out infinite; }
+  @keyframes float1 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-40px,60px)} }
+  @keyframes float2 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(60px,-40px)} }
+
+  h1,h2,h3,h4 { font-family: 'Outfit', sans-serif; line-height: 1.05; letter-spacing: -0.02em; color: var(--text); }
+  h1 { font-size: clamp(2.8rem,6.5vw,5.5rem); font-weight: 900; }
+  h2 { font-size: clamp(2rem,4vw,3.4rem); font-weight: 800; }
+  h3 { font-size: 1.3rem; font-weight: 700; }
+  h4 { font-size: 1rem; font-weight: 700; }
+
+  .eyebrow { font-size:0.68rem; letter-spacing:0.22em; text-transform:uppercase; font-weight:700; color:var(--green-dark); font-family:'Outfit',sans-serif; display:inline-flex; align-items:center; gap:8px; }
+  .eyebrow::before { content:''; width:24px; height:1.5px; background:var(--green); }
+
+  .container { max-width:1360px; margin:0 auto; padding:0 1.5rem; }
+  @media(min-width:768px){ .container { padding:0 2.5rem; } }
+  @media(min-width:1024px){ .container { padding:0 5rem; } }
+  section { padding:6rem 0; position:relative; }
+  @media(min-width:1024px){ section { padding:7rem 0; } }
+
+  /* NAV */
+  .nav { position:sticky; top:0; z-index:100; background:rgba(255,255,255,0.85); backdrop-filter:blur(28px); -webkit-backdrop-filter:blur(28px); border-bottom:1px solid var(--border); transition: box-shadow 0.3s; }
+  .nav.scrolled { box-shadow: var(--shadow-sm); }
+  .nav-inner { display:flex; align-items:center; justify-content:space-between; height:76px; }
+  .nav-logo { display:flex; align-items:center; gap:12px; text-decoration:none; flex-shrink:0; }
+  .nav-logo .logo-mark { width:42px; height:42px; flex-shrink:0; object-fit:contain; display:block; transition: transform 0.4s cubic-bezier(.34,1.56,.64,1); }
+  .nav-logo:hover .logo-mark { transform: rotate(-8deg) scale(1.05); }
+  .nav-logo-text { display:flex; flex-direction:column; line-height:1; }
+  .nav-logo-name { font-family:'Outfit',sans-serif; font-size:1rem; font-weight:800; color:var(--navy); }
+  .nav-logo-sub { font-size:0.6rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--green-dark); margin-top:3px; font-weight:700; }
+  .nav-links { display:none; }
+  @media(min-width:1024px){
+    .nav-links { display:flex; align-items:center; gap:2.5rem; list-style:none; }
+    .nav-links a { position:relative; text-decoration:none; color:var(--text-mid); font-size:0.9rem; font-weight:500; transition:color var(--transition); padding:6px 0; }
+    .nav-links a::after { content:''; position:absolute; bottom:0; left:0; height:2px; background:var(--green); width:0; transition:width 0.35s cubic-bezier(.4,0,.2,1); }
+    .nav-links a:hover { color:var(--navy); } .nav-links a:hover::after { width:100%; }
+    .nav-links a.active { color:var(--navy); } .nav-links a.active::after { width:100%; }
+  }
+  .btn-primary { display:inline-flex; align-items:center; gap:8px; background:var(--green); color:var(--white); padding:0.6rem 1.5rem; border-radius:50px; font-size:0.875rem; font-weight:700; text-decoration:none; transition:all var(--transition); font-family:'Outfit',sans-serif; position:relative; overflow:hidden; }
+  .btn-primary:hover { background:var(--green-dark); transform:translateY(-2px); box-shadow:var(--shadow-glow); }
+  .hamburger { display:block; background:none; border:none; cursor:pointer; padding:6px; color:var(--navy); }
+  @media(min-width:1024px){ .hamburger { display:none; } }
+  .mobile-menu { display:none; background:var(--bg); border-bottom:1px solid var(--border); }
+  .mobile-menu.open { display:block; animation: slideDown 0.3s ease; }
+  @keyframes slideDown { from { opacity:0; transform: translateY(-10px); } to { opacity:1; transform:translateY(0); } }
+  .mobile-menu ul { list-style:none; padding:1rem 1.5rem 1.5rem; display:flex; flex-direction:column; gap:0.25rem; }
+  .mobile-menu a { display:block; padding:0.75rem 0; color:var(--text-mid); text-decoration:none; font-weight:500; border-bottom:1px solid var(--border); }
+
+  /* BUTTONS */
+  .btn-primary-lg { display:inline-flex; align-items:center; gap:10px; background:var(--green); color:var(--white); padding:0.95rem 2rem; border-radius:50px; font-size:0.95rem; font-weight:800; text-decoration:none; transition:all var(--transition); box-shadow:0 8px 22px var(--green-glow); font-family:'Outfit',sans-serif; position:relative; overflow:hidden; }
+  .btn-primary-lg::before { content:''; position:absolute; inset:0; background:linear-gradient(120deg, transparent, rgba(255,255,255,0.25), transparent); transform:translateX(-100%); transition:transform 0.6s; }
+  .btn-primary-lg:hover { background:var(--green-dark); transform:translateY(-3px); box-shadow:0 14px 34px var(--green-glow); }
+  .btn-primary-lg:hover::before { transform:translateX(100%); }
+  .btn-ghost-lg { display:inline-flex; align-items:center; gap:10px; background:transparent; color:var(--navy); padding:0.95rem 2rem; border-radius:50px; border:1.5px solid var(--border-strong); font-size:0.95rem; font-weight:700; text-decoration:none; transition:all var(--transition); font-family:'Outfit',sans-serif; }
+  .btn-ghost-lg:hover { border-color:var(--green); color:var(--green-dark); background:var(--green-dim); transform:translateY(-2px); }
+
+  /* SERVICE TAG */
+  .service-tag { display:inline-flex; align-items:center; gap:8px; background:var(--green-dim); border:1px solid var(--green-mid); color:var(--green-dark); padding:0.4rem 1rem; border-radius:50px; font-size:0.68rem; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; margin-bottom:1.5rem; font-family:'Outfit',sans-serif; }
+
+  /* FEATURE LIST */
+  .feature-list { border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; background:var(--white); box-shadow:var(--shadow-sm); }
+  .feature-list-header { padding:1rem 1.5rem; background:var(--green-dim); border-bottom:1px solid var(--border); font-size:0.68rem; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:var(--green-dark); font-family:'Outfit',sans-serif; }
+  .feature-item { display:flex; align-items:center; gap:1rem; padding:1rem 1.5rem; border-bottom:1px solid var(--border); transition:all var(--transition); cursor:default; }
+  .feature-item:last-child { border-bottom:none; }
+  .feature-item:hover { background:var(--green-dim); padding-left:1.75rem; }
+  .feature-item:hover .feature-dot { transform:scale(1.6); }
+  .feature-dot { width:7px; height:7px; border-radius:50%; background:var(--green); flex-shrink:0; transition: transform var(--transition); box-shadow:0 0 0 4px var(--green-dim); }
+  .feature-item span { color:var(--text-mid); font-size:0.9rem; }
+
+  /* SOLUTIONS GRID */
+  .solutions-header { padding:1rem 1.5rem; background:var(--green-dim); border:1px solid var(--border); border-radius:var(--radius) var(--radius) 0 0; font-size:0.68rem; font-weight:700; letter-spacing:0.18em; text-transform:uppercase; color:var(--green-dark); font-family:'Outfit',sans-serif; }
+  .solutions-grid { display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--border); border:1px solid var(--border); border-top:none; border-radius:0 0 var(--radius) var(--radius); overflow:hidden; }
+  .solution-item { background:var(--white); padding:1.1rem 1.5rem; font-size:0.9rem; color:var(--text-mid); transition:all var(--transition); cursor:default; }
+  .solution-item:hover { background:var(--green-dim); color:var(--green-dark); transform:scale(1.02); }
+  .solution-item-highlight { color:var(--green-dark); font-weight:600; }
+
+  /* SERVICE LAYOUT */
+  .service-section { border-bottom:1px solid var(--border); }
+  .service-section:nth-child(even) { background:var(--bg-alt); }
+  .service-layout { display:grid; gap:4rem; align-items:center; }
+  @media(min-width:1024px){ .service-layout { grid-template-columns:1fr 1fr; gap:6rem; } }
+  @media(min-width:1024px){ .service-layout.reverse .service-content { order:2; } .service-layout.reverse .service-aside { order:1; } }
+  .service-content h2 { margin-bottom:1.25rem; }
+  .service-content p { color:var(--text-mid); font-size:1rem; line-height:1.85; margin-bottom:1rem; }
+  .service-img-wrap { border-radius:20px; overflow:hidden; position:relative; box-shadow:var(--shadow-lg); }
+  .service-img-wrap img { width:100%; height:420px; object-fit:cover; display:block; transition: transform 0.8s cubic-bezier(0.4,0,0.2,1); }
+  .service-img-wrap:hover img { transform:scale(1.06); }
+  .img-badge { position:absolute; bottom:1.5rem; left:1.5rem; background:rgba(255,255,255,0.96); backdrop-filter:blur(12px); border:1px solid var(--border); border-radius:12px; padding:0.75rem 1.25rem; display:flex; align-items:center; gap:10px; box-shadow:var(--shadow-md); }
+  .img-badge-dot { width:10px; height:10px; border-radius:50%; background:var(--green); box-shadow:0 0 0 4px var(--green-dim); animation: pulse 2s ease-in-out infinite; }
+  @keyframes pulse { 0%,100%{box-shadow:0 0 0 4px var(--green-dim);} 50%{box-shadow:0 0 0 8px transparent;} }
+  .img-badge span { font-size:0.8rem; font-weight:700; color:var(--navy); font-family:'Outfit',sans-serif; }
+
+  /* CTA */
+  .cta-section { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%); color:var(--white); position:relative; overflow:hidden; padding:7rem 0; }
+  .cta-section::before { content:''; position:absolute; inset:0; background: radial-gradient(circle at 80% 50%, rgba(79,181,46,0.25), transparent 60%); }
+  .cta-section::after { content:''; position:absolute; inset:0; background-image: radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px); background-size: 24px 24px; opacity:0.5; }
+  .cta-section h2, .cta-section p { color: var(--white); position:relative; z-index:1; }
+  .cta-section p { color: rgba(255,255,255,0.75); }
+  .cta-section .eyebrow { color: var(--green); }
+  .cta-section .btn-ghost-lg { background:rgba(255,255,255,0.08); color:var(--white); border-color:rgba(255,255,255,0.2); backdrop-filter:blur(8px); }
+  .cta-section .btn-ghost-lg:hover { background:rgba(255,255,255,0.15); border-color:var(--green); color:var(--white); }
+  .cta-inner { display:grid; gap:4rem; align-items:center; position:relative; z-index:1; }
+  @media(min-width:1024px){ .cta-inner { grid-template-columns:1fr auto; } }
+  .cta-btns { display:flex; flex-direction:column; gap:0.875rem; }
+
+  /* FOOTER */
+  footer { background:var(--navy); color:var(--white); }
+  .footer-main { padding:5rem 0 3rem; }
+  .footer-grid { display:grid; gap:3rem; }
+  @media(min-width:768px){ .footer-grid { grid-template-columns:2.5fr 1fr 1fr; } }
+  .footer-brand p { color:rgba(255,255,255,0.6); font-size:0.9rem; line-height:1.85; margin-top:1.5rem; max-width:320px; }
+  .footer-col h5 { font-size:0.68rem; text-transform:uppercase; letter-spacing:0.2em; color:var(--green); font-weight:700; margin-bottom:1.5rem; font-family:'Outfit',sans-serif; }
+  .footer-col ul { list-style:none; display:flex; flex-direction:column; gap:0.95rem; }
+  .footer-col a { color:rgba(255,255,255,0.55); text-decoration:none; font-size:0.9rem; line-height:1.6; transition:all var(--transition); position:relative; display:inline-block; }
+  .footer-col a:hover { color:var(--white); transform:translateX(4px); }
+  .footer-bottom { border-top:1px solid rgba(255,255,255,0.08); padding:2rem 0; display:flex; flex-direction:column; gap:1rem; }
+  @media(min-width:640px){ .footer-bottom { flex-direction:row; justify-content:space-between; align-items:center; } }
+  .footer-bottom p { font-size:0.82rem; line-height:1.7; color:rgba(255,255,255,0.55); }
+  .footer-bottom a { color:var(--green); text-decoration:none; font-weight:600; }
+  .footer-bottom a:hover { color:var(--white); }
+
+  /* SCROLL TOP */
+  #scrollTop { position:fixed; bottom:2rem; right:2rem; z-index:200; width:50px; height:50px; border-radius:50%; background:var(--green); color:var(--white); border:none; cursor:pointer; display:flex; align-items:center; justify-content:center; box-shadow:0 8px 28px var(--green-glow); opacity:0; transform:translateY(20px) scale(0.8); transition:all 0.35s cubic-bezier(.34,1.56,.64,1); pointer-events:none; }
+  #scrollTop.visible { opacity:1; transform:translateY(0) scale(1); pointer-events:all; }
+  #scrollTop:hover { background:var(--green-dark); transform:translateY(-4px) scale(1.05); }
+
+  /* SCROLL PROGRESS */
+  .scroll-progress { position:fixed; top:0; left:0; height:3px; background:linear-gradient(90deg, var(--green), var(--green-dark)); width:0; z-index:1000; transition: width 0.1s linear; box-shadow:0 0 12px var(--green-glow); }
+
+  /* ANIMATIONS */
+  .reveal { opacity:0; transform:translateY(40px); transition:opacity 0.8s cubic-bezier(.16,1,.3,1), transform 0.8s cubic-bezier(.16,1,.3,1); transition-delay: calc(var(--i, 0) * 80ms); }
+  .reveal.in { opacity:1; transform:translateY(0); }
+  .reveal-left { opacity:0; transform:translateX(-50px); transition:opacity 0.8s cubic-bezier(.16,1,.3,1), transform 0.8s cubic-bezier(.16,1,.3,1); transition-delay: calc(var(--i, 0) * 80ms); }
+  .reveal-left.in { opacity:1; transform:translateX(0); }
+  .reveal-right { opacity:0; transform:translateX(50px); transition:opacity 0.8s cubic-bezier(.16,1,.3,1), transform 0.8s cubic-bezier(.16,1,.3,1); transition-delay: calc(var(--i, 0) * 80ms); }
+  .reveal-right.in { opacity:1; transform:translateX(0); }
+  .reveal-scale { opacity:0; transform:scale(0.92); transition:opacity 0.7s cubic-bezier(.16,1,.3,1), transform 0.7s cubic-bezier(.16,1,.3,1); transition-delay: calc(var(--i, 0) * 80ms); }
+  .reveal-scale.in { opacity:1; transform:scale(1); }
+
+  .hover-lift { transition: transform var(--transition), box-shadow var(--transition); }
+  .hover-lift:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+
+  /* RIPPLE */
+  .ripple { position:absolute; border-radius:50%; transform:scale(0); animation:rippleEffect 0.6s ease-out; background:rgba(255,255,255,0.5); pointer-events:none; }
+  @keyframes rippleEffect { to { transform:scale(4); opacity:0; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  }
+</style>
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="bg-orbs" aria-hidden="true"></div>
+  <a href="#main" style="position:absolute;left:-9999px;top:0;background:#091628;color:#fff;padding:.75rem 1rem;z-index:100;" onfocus="this.style.left='1rem'">Skip to main content</a>
+
+  <header class="nav" id="siteNav">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo" aria-label="Royal Smart Max Ltd">
+          <img class="logo-mark" src="assets/images/logo.png" alt="Royal Smart Max Ltd" />
+          <div class="nav-logo-text">
+            <span class="nav-logo-name">Royal Smart Max</span>
+            <span class="nav-logo-sub">Technology Ltd</span>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <a href="index.html#contact" class="btn-primary" id="desktopCta" style="display:none;">Get a Quote</a>
+          <button class="hamburger" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="index.html#contact" class="btn-primary" style="margin-top:.5rem;justify-content:center;">Get a Quote</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <style>
+      .service-nav-sticky { position:sticky; top:76px; z-index:90; background:rgba(255,255,255,0.92); backdrop-filter:blur(20px); border-bottom:1px solid var(--border); }
+      .snav-inner { display:flex; overflow-x:auto; scrollbar-width:none; }
+      .snav-inner::-webkit-scrollbar { display:none; }
+      .snl { display:flex; align-items:center; gap:8px; padding:1.1rem 1.5rem; font-size:0.75rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--text-muted); text-decoration:none; white-space:nowrap; transition:color var(--transition); border-bottom:2px solid transparent; flex-shrink:0; font-family:'Outfit',sans-serif; }
+      .snl:hover { color:var(--navy); }
+      .snl.active { color:var(--green-dark); border-bottom-color:var(--green); }
+      .snl-num { opacity:0.5; font-size:0.65rem; }
+
+      .stats-bar { background:var(--white); border-bottom:1px solid var(--border); }
+      .stats-inner { display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--border); }
+      @media(min-width:768px){ .stats-inner { grid-template-columns:repeat(4,1fr); } }
+      .stat-item { background:var(--white); padding:2.5rem 2rem; transition: all var(--transition); }
+      .stat-item:hover { background:var(--green-dim); transform: translateY(-2px); }
+      .stat-num { font-family:'Outfit',sans-serif; font-size:2.8rem; font-weight:900; color:var(--green-dark); line-height:1; letter-spacing:-0.03em; }
+      .stat-label { color:var(--text-muted); font-size:0.78rem; margin-top:0.4rem; text-transform:uppercase; letter-spacing:0.1em; font-weight:600; }
+
+      .process-grid { display:grid; gap:1px; background:var(--border); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; margin-top:4rem; box-shadow:var(--shadow-sm); }
+      @media(min-width:768px){ .process-grid { grid-template-columns:repeat(4,1fr); } }
+      .process-step { background:var(--white); padding:2.5rem 2rem; transition:all var(--transition); position:relative; }
+      .process-step:hover { background:var(--green-dim); }
+      .step-num { font-family:'Outfit',sans-serif; font-size:3.5rem; font-weight:900; color:var(--green); opacity:0.25; line-height:1; margin-bottom:1.5rem; letter-spacing:-0.04em; transition:opacity var(--transition); }
+      .process-step:hover .step-num { opacity:0.6; }
+      .process-step h4 { font-family:'Outfit',sans-serif; font-size:1.1rem; font-weight:700; margin-bottom:0.5rem; }
+      .process-step p { color:var(--text-muted); font-size:0.9rem; line-height:1.7; }
+    </style>
+
+    <!-- PAGE HERO -->
+    <section style="padding:6rem 0 4rem;">
+      <div class="container">
+        <div style="max-width:900px;">
+          <p class="eyebrow reveal" style="margin-bottom:1.25rem;">Services - End-to-End Technology Solutions</p>
+          <h1 class="reveal" style="--i:1;">Powering Businesses<br/>Across <span style="background:linear-gradient(135deg,var(--green),var(--green-dark));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">East Africa.</span></h1>
+          <p class="reveal" style="--i:2; color:var(--text-mid); font-size:1.1rem; line-height:1.8; max-width:640px; margin-top:1.5rem; margin-bottom:2.5rem;">From strategy to deployment, networking to digital marketing - comprehensive ICT services tailored for organisations that demand results.</p>
+          <div class="reveal" style="--i:3; display:flex; flex-wrap:wrap; gap:1rem;">
+            <a href="#ict-consultancy" class="btn-primary-lg">Explore Services ↓</a>
+            <a href="index.html#contact" class="btn-ghost-lg">Get a Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <div class="stats-bar">
+      <div class="container" style="padding-left:0;padding-right:0;">
+        <div class="stats-inner">
+          <div class="stat-item reveal"><div class="stat-num"><span data-count="6" data-suffix="+">0</span></div><div class="stat-label">Service Lines</div></div>
+          <div class="stat-item reveal" style="--i:1;"><div class="stat-num"><span data-count="100" data-suffix="+">0</span></div><div class="stat-label">Projects Delivered</div></div>
+          <div class="stat-item reveal" style="--i:2;"><div class="stat-num"><span data-count="5" data-suffix="+">0</span></div><div class="stat-label">Years Experience</div></div>
+          <div class="stat-item reveal" style="--i:3;"><div class="stat-num" style="font-size:2.4rem;">EA</div><div class="stat-label">East Africa Coverage</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STICKY SERVICE NAV -->
+    <nav class="service-nav-sticky" aria-label="Services index">
+      <div class="container" style="padding-left:0;padding-right:0;">
+        <div class="snav-inner">
+          <a href="#ict-consultancy" class="snl active"><span class="snl-num">01 ·</span> Consultancy</a>
+          <a href="#software-development" class="snl"><span class="snl-num">02 ·</span> Software</a>
+          <a href="#web-design" class="snl"><span class="snl-num">03 ·</span> Web Design</a>
+          <a href="#networking" class="snl"><span class="snl-num">04 ·</span> Networking</a>
+          <a href="#digital-marketing" class="snl"><span class="snl-num">05 ·</span> Marketing</a>
+          <a href="#ict-equipment" class="snl"><span class="snl-num">06 ·</span> Equipment</a>
+        </div>
+      </div>
+    </nav>
+
+    <section id="ict-consultancy" class="service-section">
+      <div class="container">
+        <div class="service-layout ">
+          <div class="service-content reveal-left">
+            <div class="service-tag">Service 01 of 06</div>
+            <h2>ICT Consultancy.</h2>
+            <p>We provide professional ICT advisory services that help organisations develop effective technology strategies, optimise their systems and improve operational performance.</p>
+            <p>Our consultants combine global best practice with deep local market knowledge - acting as strategic partners, not just advisors.</p>
+            <a href="mailto:info@royalsmartmax.co.ke" class="btn-primary-lg">Discuss Requirements →</a>
+          </div>
+          <div class="service-aside reveal-right">
+            <div class="service-img-wrap" style="margin-bottom:2rem;">
+              <img src="assets/images/1.webp" alt="ICT Consultancy" />
+              <div class="img-badge"><div class="img-badge-dot"></div><span>Strategic Advisory</span></div>
+            </div>
+            <div class="feature-list hover-lift">
+              <div class="feature-list-header">What's Included</div>
+              <div class="feature-item"><div class="feature-dot"></div><span>ICT infrastructure planning and architecture design</span></div>
+              <div class="feature-item"><div class="feature-dot"></div><span>Technology audits and current-state assessments</span></div>
+              <div class="feature-item"><div class="feature-dot"></div><span>System analysis, design and optimisation</span></div>
+              <div class="feature-item"><div class="feature-dot"></div><span>Digital transformation strategy and roadmapping</span></div>
+              <div class="feature-item"><div class="feature-dot"></div><span>IT policy development and governance frameworks</span></div>
+              <div class="feature-item"><div class="feature-dot"></div><span>Business process automation advisory</span></div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="software-development" class="service-section">
+      <div class="container">
+        <div class="service-layout reverse">
+          <div class="service-content reveal-right">
+            <div class="service-tag">Service 02 of 06</div>
+            <h2>Software Development.</h2>
+            <p>We design and develop custom software applications tailored to the unique operational needs of businesses and institutions across Kenya.</p>
+            <p>Every system is purpose-built - not adapted from generic templates. From concept through development, testing, deployment and ongoing support.</p>
+            <a href="mailto:info@royalsmartmax.co.ke" class="btn-primary-lg">Start a Project →</a>
+          </div>
+          <div class="service-aside reveal-left">
+            <div class="service-img-wrap" style="margin-bottom:2rem;">
+              <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?w=800&q=80&auto=format&fit=crop" alt="Software Development" />
+              <div class="img-badge"><div class="img-badge-dot"></div><span>Custom-Built Solutions</span></div>
+            </div>
+            <div class="solutions-header">Solutions We Build</div>
+              <div class="solutions-grid">
+                <div class="solution-item">Business Management Systems</div>
+                <div class="solution-item">School Management Systems</div>
+                <div class="solution-item">Hospital Management Systems</div>
+                <div class="solution-item">Point of Sale (POS)</div>
+                <div class="solution-item">CRM Systems</div>
+                <div class="solution-item">Mobile Applications</div>
+                <div class="solution-item">Web Applications</div>
+                <div class="solution-item solution-item-highlight">E-Commerce Platforms</div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="web-design" class="service-section">
+      <div class="container">
+        <div class="service-layout ">
+          <div class="service-content reveal-left">
+            <div class="service-tag">Service 03 of 06</div>
+            <h2>Website Design &amp; Development.</h2>
+            <p>Modern, responsive, user-friendly websites that enhance your online presence and convert visitors into customers - optimised for speed, accessibility and search engine visibility.</p>
+            <p>From portfolios to complex e-commerce platforms with payment integrations - digital experiences that reflect your brand.</p>
+            <a href="mailto:info@royalsmartmax.co.ke" class="btn-primary-lg">Request a Quote →</a>
+          </div>
+          <div class="service-aside reveal-right">
+            <div class="service-img-wrap" style="margin-bottom:2rem;">
+              <img src="assets/images/2.webp" alt="Website Design &amp; Development" />
+              <div class="img-badge"><div class="img-badge-dot"></div><span>Responsive &amp; Fast</span></div>
+            </div>
+            <div class="feature-list hover-lift">
+              <div class="feature-list-header">Website Services</div>
+              <div class="feature-item"><div class="feature-dot"></div><span>Corporate and institutional website design</span></div>
+              <div class="feature-item"><div class="feature-dot"></div><span>E-commerce with payment gateway integration</span></div>
+              <div class="feature-item"><div class="feature-dot"></div><span>Portfolio and landing page development</span></div>
+              <div class="feature-item"><div class="feature-dot"></div><span>Maintenance and performance optimisation</span></div>
+              <div class="feature-item"><div class="feature-dot"></div><span>Domain registration and reliable hosting</span></div>
+              <div class="feature-item"><div class="feature-dot"></div><span>Search engine optimisation (SEO)</span></div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="networking" class="service-section">
+      <div class="container">
+        <div class="service-layout reverse">
+          <div class="service-content reveal-right">
+            <div class="service-tag">Service 04 of 06</div>
+            <h2>Networking &amp; IT Infrastructure.</h2>
+            <p>Reliable networking solutions and IT infrastructure support to ensure smooth, secure and scalable operations - from initial planning and cabling through configuration, monitoring and maintenance.</p>
+            <p>Setting up a new office network, upgrading ageing infrastructure, or installing surveillance - all delivered with precision.</p>
+            <a href="mailto:info@royalsmartmax.co.ke" class="btn-primary-lg">Get Support →</a>
+          </div>
+          <div class="service-aside reveal-left">
+            <div class="service-img-wrap" style="margin-bottom:2rem;">
+              <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80&auto=format&fit=crop" alt="Networking &amp; IT Infrastructure" />
+              <div class="img-badge"><div class="img-badge-dot"></div><span>Secure &amp; Scalable</span></div>
+            </div>
+            <div class="feature-list hover-lift">
+              <div class="feature-list-header">Networking &amp; IT Services</div>
+              <div class="feature-item"><div class="feature-dot"></div><span>LAN and WAN setup and configuration</span></div>
+              <div class="feature-item"><div class="feature-dot"></div><span>Structured cabling and physical infrastructure</span></div>
+              <div class="feature-item"><div class="feature-dot"></div><span>Wireless networking design and deployment</span></div>
+              <div class="feature-item"><div class="feature-dot"></div><span>Server installation, configuration and maintenance</span></div>
+              <div class="feature-item"><div class="feature-dot"></div><span>CCTV installation and access control systems</span></div>
+              <div class="feature-item"><div class="feature-dot"></div><span>Data backup, recovery and cloud solutions</span></div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="digital-marketing" class="service-section">
+      <div class="container">
+        <div class="service-layout ">
+          <div class="service-content reveal-left">
+            <div class="service-tag">Service 05 of 06</div>
+            <h2>Digital Marketing.</h2>
+            <p>Digital marketing solutions that help businesses increase visibility, reach target audiences and grow their brands online - measurably. Creative expertise combined with data-driven strategy.</p>
+            <p>From establishing brand identity to scaling your digital presence across social platforms and search engines.</p>
+            <a href="mailto:info@royalsmartmax.co.ke" class="btn-primary-lg">Grow Your Brand →</a>
+          </div>
+          <div class="service-aside reveal-right">
+            <div class="service-img-wrap" style="margin-bottom:2rem;">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80&auto=format&fit=crop" alt="Digital Marketing" />
+              <div class="img-badge"><div class="img-badge-dot"></div><span>Data-Driven Growth</span></div>
+            </div>
+            <div class="feature-list hover-lift">
+              <div class="feature-list-header">Marketing Services</div>
+              <div class="feature-item"><div class="feature-dot"></div><span>Social media management across all major platforms</span></div>
+              <div class="feature-item"><div class="feature-dot"></div><span>Content marketing strategy and production</span></div>
+              <div class="feature-item"><div class="feature-dot"></div><span>Professional graphic design and visual identity</span></div>
+              <div class="feature-item"><div class="feature-dot"></div><span>Email marketing campaigns and automation</span></div>
+              <div class="feature-item"><div class="feature-dot"></div><span>Online advertising (Google Ads, Meta Ads)</span></div>
+              <div class="feature-item"><div class="feature-dot"></div><span>Brand identity and comprehensive branding</span></div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ict-equipment" class="service-section">
+      <div class="container">
+        <div class="service-layout reverse">
+          <div class="service-content reveal-right">
+            <div class="service-tag">Service 06 of 06</div>
+            <h2>ICT Equipment Supply.</h2>
+            <p>Quality-assured supply of computers, laptops, printers, networking hardware, CCTV systems and software licences - sourced reliably and delivered to your premises.</p>
+            <p>We source from reputable suppliers ensuring genuine, warranted products backed by our after-sales support team.</p>
+            <a href="mailto:info@royalsmartmax.co.ke" class="btn-primary-lg">Request Equipment Quote →</a>
+          </div>
+          <div class="service-aside reveal-left">
+            <div class="service-img-wrap" style="margin-bottom:2rem;">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80&auto=format&fit=crop" alt="ICT Equipment Supply" />
+              <div class="img-badge"><div class="img-badge-dot"></div><span>Genuine &amp; Warranted</span></div>
+            </div>
+            <div class="solutions-header">Equipment We Supply</div>
+              <div class="solutions-grid">
+                <div class="solution-item">Computers &amp; Laptops</div>
+                <div class="solution-item">Printers &amp; Scanners</div>
+                <div class="solution-item">Networking Equipment</div>
+                <div class="solution-item">CCTV Systems</div>
+                <div class="solution-item">Access Control</div>
+                <div class="solution-item">Servers &amp; Storage</div>
+                <div class="solution-item">Software Licences</div>
+                <div class="solution-item solution-item-highlight">Accessories &amp; Cables</div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section style="background:var(--bg-alt);">
+      <div class="container">
+        <div class="reveal">
+          <p class="eyebrow" style="margin-bottom:1rem;">How We Work</p>
+          <h2>Our Delivery Process.</h2>
+          <p style="color:var(--text-mid); font-size:1rem; line-height:1.8; max-width:580px; margin-top:1rem;">A proven methodology that keeps projects on time, on budget, and on point - every time.</p>
+        </div>
+        <div class="process-grid">
+          <div class="process-step reveal-scale" style="--i:0;"><div class="step-num">01</div><h4>Discovery</h4><p>We understand your business goals, technical landscape, and define clear project scope and deliverables.</p></div>
+          <div class="process-step reveal-scale" style="--i:1;"><div class="step-num">02</div><h4>Design</h4><p>Architecture, wireframes and solution blueprints are crafted and validated with your team before a single line of code.</p></div>
+          <div class="process-step reveal-scale" style="--i:2;"><div class="step-num">03</div><h4>Build</h4><p>Agile development with regular milestones, transparent communication and thorough quality assurance at every stage.</p></div>
+          <div class="process-step reveal-scale" style="--i:3;"><div class="step-num">04</div><h4>Support</h4><p>Post-deployment monitoring, training, maintenance and ongoing optimisation to keep your systems running at peak.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-inner">
+          <div class="reveal-left">
+            <p class="eyebrow" style="margin-bottom:1rem;">Engage Us</p>
+            <h2>Tell Us About<br/>Your Project.</h2>
+            <p style="font-size:1.05rem; line-height:1.8; max-width:560px; margin-top:1rem;">Whichever service line you need - we'd love to scope it together. No obligation, just a conversation.</p>
+          </div>
+          <div class="cta-btns reveal-right">
+            <a href="mailto:info@royalsmartmax.co.ke" class="btn-primary-lg">Email Us →</a>
+            <a href="about.html" class="btn-ghost-lg">About the Studio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // Active sticky-nav highlight
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.snl');
+    window.addEventListener('scroll', () => {
+      let cur = '';
+      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 200) cur = s.id; });
+      navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + cur));
+    }, { passive: true });
+  </script>
+
+  <footer>
+    <div class="container footer-main">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" aria-label="Royal Smart Max Ltd" style="margin-bottom:0;"><img class="logo-mark" src="assets/images/logo.png" alt="Royal Smart Max Ltd" />
+            <div class="nav-logo-text">
+              <span class="nav-logo-name" style="color:#fff;">Royal Smart Max Ltd</span>
+              <span class="nav-logo-sub">Technology Solutions</span>
+            </div>
+          </a>
+          <p>Empowering businesses through smart technology solutions across Kenya and East Africa.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#values">Core Values</a></li>
+            <li><a href="about.html#why-us">Why Us</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="services.html#ict-consultancy">ICT Consultancy</a></li>
+            <li><a href="services.html#software-development">Software Dev</a></li>
+            <li><a href="services.html#web-design">Website Design</a></li>
+            <li><a href="services.html#networking">Networking &amp; IT</a></li>
+            <li><a href="services.html#digital-marketing">Digital Marketing</a></li>
+            <li><a href="services.html#ict-equipment">ICT Equipment</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="yr"></span> Royal Smart Max Ltd. All rights reserved.</p>
+        <p>Crafted by <a href="https://www.sketchbook.co.ke" target="_blank" rel="noopener noreferrer">Sketchbook.co.ke</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollTop" aria-label="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+    if (window.innerWidth >= 640) document.getElementById('desktopCta').style.display = 'inline-flex';
+
+    // Mobile menu
+    const toggle = document.getElementById('navToggle'), menu = document.getElementById('mobileMenu');
+    toggle.addEventListener('click', () => { const o = menu.classList.toggle('open'); toggle.setAttribute('aria-expanded', o); });
+
+    // Sticky nav shadow + scroll progress
+    const nav = document.getElementById('siteNav'), prog = document.getElementById('scrollProgress');
+    const onScroll = () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+      const h = document.documentElement.scrollHeight - window.innerHeight;
+      prog.style.width = (window.scrollY / h * 100) + '%';
+      scrollBtn.classList.toggle('visible', window.scrollY > 500);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    // Scroll top
+    const scrollBtn = document.getElementById('scrollTop');
+    scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // Reveal on scroll (with stagger via --i)
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); } });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale').forEach((el, i) => {
+      // auto-stagger siblings inside grids
+      if (!el.style.getPropertyValue('--i')) {
+        const sibIndex = Array.from(el.parentNode.children).indexOf(el);
+        el.style.setProperty('--i', Math.min(sibIndex, 8));
+      }
+      obs.observe(el);
+    });
+
+    // Count-up for stats
+    const countObs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          const el = e.target;
+          const target = parseInt(el.dataset.count, 10);
+          const suffix = el.dataset.suffix || '';
+          let cur = 0; const step = Math.max(1, Math.ceil(target / 40));
+          const tick = () => { cur += step; if (cur >= target) { el.textContent = target + suffix; } else { el.textContent = cur + suffix; requestAnimationFrame(tick); } };
+          tick();
+          countObs.unobserve(el);
+        }
+      });
+    }, { threshold: 0.4 });
+    document.querySelectorAll('[data-count]').forEach(el => countObs.observe(el));
+
+    // Click ripple for primary buttons
+    document.querySelectorAll('.btn-primary, .btn-primary-lg, .btn-ghost-lg, .form-submit').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        const rect = this.getBoundingClientRect();
+        const size = Math.max(rect.width, rect.height);
+        const ripple = document.createElement('span');
+        ripple.className = 'ripple';
+        ripple.style.width = ripple.style.height = size + 'px';
+        ripple.style.left = (e.clientX - rect.left - size/2) + 'px';
+        ripple.style.top  = (e.clientY - rect.top  - size/2) + 'px';
+        ripple.style.background = this.classList.contains('btn-ghost-lg') ? 'rgba(79,181,46,0.25)' : 'rgba(255,255,255,0.45)';
+        this.appendChild(ripple);
+        setTimeout(() => ripple.remove(), 700);
+      });
+    });
+
+    // Smooth in-page anchor offset
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const id = a.getAttribute('href');
+        if (id.length > 1 && document.querySelector(id)) {
+          e.preventDefault();
+          document.querySelector(id).scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
